@@ -1,3 +1,27 @@
+![Home page](public/screenshots/home_desktop.png)
+
+![Home page](public/screenshots/dark_home_desktop.png)
+
+![Home page](public/screenshots/home_mobile.png)
+
+![Home page](public/screenshots/dark_home_mobile.png)
+
+![Home page](public/screenshots/endclass_desktop.png)
+
+![Home page](public/screenshots/dark_endclass_desktop.png)
+
+![Home page](public/screenshots/dark_endclass_home.png)
+
+![Home page](public/screenshots/endclass_mobile.png)
+
+![Home page](public/screenshots/sidebar.png)
+
+![Home page](public/screenshots/dark_sidebar.png)
+
+![Home page](public/screenshots/side_bar.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
