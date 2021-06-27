@@ -25,6 +25,7 @@ export default class index extends Component {
       minutes: 9,
       sec: 0,
       end_class: false,
+      interval: null,
     };
   }
 
@@ -37,14 +38,14 @@ export default class index extends Component {
   };
 
   countDown = () => {
-    let { sec, minutes } = this.state;
+    let { sec, minutes, interval } = this.state;
     if (minutes === 0 && sec === 1) {
       this.setState({
         sec: 60,
         minutes: 9,
         end_class: true,
       });
-      clearInterval(this.interval);
+      clearInterval(interval);
       return;
     }
     if (sec === 1) {
@@ -60,7 +61,10 @@ export default class index extends Component {
   };
 
   startTimer = () => {
-    this.interval = setInterval(() => this.countDown(), 1000);
+    let interval = setInterval(() => this.countDown(), 1000);
+    this.setState({
+      interval,
+    });
   };
 
   resetClass = () => {
