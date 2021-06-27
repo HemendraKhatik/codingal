@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { useState, Fragment } from "react";
 import { Wrapper, ChangeThemeBar } from "./components";
 import GlobalStyle from "./GlobalStyle";
+
 // Pages
 import PassengersPage from "./components/Passengers";
 import LandingPage from "./Pages/Landing";

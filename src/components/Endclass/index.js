@@ -92,7 +92,7 @@ export default class index extends Component {
           </SubOptions>
 
           <Div>
-            <Button primary>End Class</Button>
+            <Button onClick={this.props.endClass} primary>End Class</Button>
             <Button onClick={close} margin="0px 0px 0px 10px">
               Cancel
             </Button>

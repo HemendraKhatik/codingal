@@ -60,7 +60,7 @@ export const Title = styled.p`
   color: ${(props) => (props.theme.dark ? "#ffffffde" : "#0d1117")};
   flex: 1;
   border-left: 2px solid #cccccc;
-  padding-left: 5%;
+  padding-left: 2%;
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -121,7 +121,7 @@ export const SideMenuContainer = styled.div`
 export const SideMenu = styled.div`
   width: 60%;
   height: 100%;
-  background-color: ${(props)=>!props.theme.dark?"#ffffff":"#121212"};
+  background-color: ${(props) => (!props.theme.dark ? "#ffffff" : "#121212")};
   padding-right: 10px;
   animation: ${expand};
   animation-duration: 0.5s;
@@ -135,7 +135,7 @@ export const SideMenu = styled.div`
 export const CloseSideMenu = styled.div`
   width: fit-content;
   height: fit-content;
-  color: ${(props)=>props.theme.dark?"#ffffffde":"#121212"};
+  color: ${(props) => (props.theme.dark ? "#ffffffde" : "#121212")};
   padding: 10px;
   cursor: pointer;
   position: absolute;
@@ -148,8 +148,8 @@ export const SideTimer = styled.div`
   height: 100px;
   display: flex;
   border-radius: 50%;
-  border: 1px solid ${(props)=>props.theme.dark?"#ffffffde":"#121212"};
-  color:${(props)=>props.theme.dark?"#ffffffde":"#121212"};
+  border: 1px solid ${(props) => (props.theme.dark ? "#ffffffde" : "#121212")};
+  color: ${(props) => (props.theme.dark ? "#ffffffde" : "#121212")};
   justify-content: center;
   align-items: center;
 `;
@@ -170,4 +170,13 @@ export const SideEndClassButton = styled.div`
   border: none;
   cursor: pointer;
   margin-top: 20px;
+`;
+
+export const SideBarTitle = styled.p`
+  width: 100%;
+  font-size: 18px;
+  color: ${(props) => (props.theme.dark ? "#ffffffde" : "#0d1117")};
+  border-left: 2px solid #cccccc;
+  text-align: center;
+  margin-top: 10px;
 `;

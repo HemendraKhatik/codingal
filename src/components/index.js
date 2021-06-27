@@ -10,7 +10,7 @@ export const ChangeThemeBar = styled.div`
   cursor: pointer;
 `;
 
-export const Bold = styled.p`
+export const Bold = styled.span`
   display: inline;
   font-weight: 600;
 `;

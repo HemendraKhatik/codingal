@@ -63,11 +63,11 @@ export default class index extends Component {
         >
           {passengers &&
             passengers.map((passenger, index) => (
-              <PassengerCard>
+              <PassengerCard key={index}>
                 <PassengerName>
                   <Bold>Passenger Name:</Bold> {passenger.name}
                 </PassengerName>
-                <Div display>
+                <Div display="true">
                   <AirlineLogo
                     src={
                       passenger.airline.logo === undefined
